@@ -6,6 +6,24 @@ document.addEventListener("DOMContentLoaded", function () {
   initSkillsAnimation();
   initNavbarScroll();
   initScrollSpy();
+  //initTypingEffect();
+  initParallaxEffect();
+  initFadeInAnimations();
+  // Initialize Bootstrap tooltips
+  const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]'); 
+  tooltipTriggerList.forEach((tooltipTriggerEl) => {
+    new bootstrap.Tooltip(tooltipTriggerEl);
+  });
+  // Initialize Bootstrap popovers 
+  const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
+  popoverTriggerList.forEach((popoverTriggerEl) => {
+    new bootstrap.Popover(popoverTriggerEl);
+  });
+  // Initialize Bootstrap collapse for mobile menu
+  const navbarCollapse = document.querySelector(".navbar-collapse");
+  if (navbarCollapse) {
+    new bootstrap.Collapse(navbarCollapse);
+  }
 });
 
 // Smooth Scrolling for Navigation Links
@@ -239,7 +257,6 @@ function initTypingEffect() {
   const texts = [
     "Frontend Developer",
     "Web Designer",
-    "UI/UX Enthusiast",
     "Problem Solver",
   ];
   let textIndex = 0;
@@ -290,7 +307,7 @@ function initParallaxEffect() {
 
 // Console welcome message
 console.log(
-  "%c🚀 Welcome to Jane Doe's Portfolio! ",
+  "%c🚀 Welcome to Shyam's Portfolio! ",
   "color: #0d6efd; font-size: 16px; font-weight: bold;"
 );
 console.log(

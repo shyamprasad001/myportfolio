@@ -44,6 +44,11 @@ body {
     color: var(--primary-color) !important;
     font-weight: 600;
 }
+.navbar.scrolled {
+  background: rgba(255,255,255,0.97) !important;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.04);
+}
+
 
 /* Hero Section */
 .bg-gradient-primary {
